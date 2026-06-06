@@ -1,0 +1,46 @@
+# 1. OS 및 개발 환경 도구 메타데이터 제외
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# 2. 의존성 라이브러리 제외 (용량이 매우 크고 npm install로 다운로드 가능)
+node_modules/
+jspm_packages/
+web_modules/
+
+# 3. 빌드 결과물 제외 (배포 시에만 생성되는 임시/최종 산출물)
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# 4. 로그 파일 제외 (디버깅 과정에서 생기는 임시 기록)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# 5. 보안 및 환경 변수 파일 제외 (API 키 등 비밀번호 유출 방지)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env*
+
+# 6. 향후 백엔드 데이터베이스 파일 제외 (로컬 개발용 SQLite 파일 등)
+*.db
+*.sqlite
+*.sqlite3
+backend/dist/
+
+notes/
