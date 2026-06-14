@@ -1,11 +1,6 @@
-// 1. TodoItem 컴포넌트가 다룰 단일 할 일 데이터의 타입 규격입니다.
-interface Todo {
-  id: number;
-  text: string;
-  completed: boolean;
-}
+import { type Todo } from '../types'
 
-// 2. 이 컴포넌트가 부모(App.tsx)로부터 전해 받아야 하는 데이터와 함수(Props)의 목록입니다.
+// 1. 이 컴포넌트가 부모(App.tsx)로부터 전해 받아야 하는 데이터와 함수(Props)의 목록입니다.
 interface TodoItemProps {
   todo: Todo;                       // 화면에 보여줄 할 일 데이터 객체
   onToggle: (id: number) => void;   // 체크박스를 눌렀을 때 부모에게 실행을 요청할 토글 함수
